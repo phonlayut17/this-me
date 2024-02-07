@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MR.PHONLAYUT SOPAK</title>
+
+    <!--  Css Other -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Aos Animation -->
+    <link href="../lib/aos.css" rel="stylesheet">
+    <script src="../lib/aos.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            AOS.init({
+                duration: 650,
+                once: false
+            });
+        });
+    </script>
+
+    <!-- Tailwind Css -->
+    <script src="../lib/tailwind.js"></script>
+    <script src="../lib/flowbite.js"></script>
+
+</head>
+
+<body>
+    <div class="main"></div>
+
+    <!-- Navbar -->
+    <nav class="border-gray-200 dark:bg-gray-900 font-guardians">
+        <div class="max-w-full flex flex-wrap items-center justify-between mx-auto p-4">
+            <div class="flex flex-row space-x-8">
+                <div class="items-center justify-between hidden w-full xl:flex xl:w-auto xl:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 bg-transparent">
+                        <li>
+                            <a onclick="moveToSection('bank-intro');"
+                                class="block py-2 px-3 font-bold text-medium text-white rounded md:bg-transparent md:hover:text-black md:p-0 md:dark:text-blue-500"
+                                aria-current="page">Intro</a>
+                        </li>
+                        <li>
+                            <a onclick="moveToSection('bank-bio');"
+                                class="block py-2 px-3 font-bold text-medium text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-black md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Bio</a>
+                        </li>
+                        <li>
+                            <a onclick="moveToSection('bank-education');"
+                                class="block py-2 px-3 font-bold text-medium text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-black md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Educations</a>
+                        </li>
+                        <li>
+                            <a onclick="moveToSection('bank-experience');"
+                                class="block py-2 px-3 font-bold text-medium text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-black md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Experiences</a>
+                        </li>
+                        <li>
+                            <a onclick="moveToSection('bank-skill');"
+                                class="block py-2 px-3 font-bold text-medium text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-black md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skill</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <a onclick="moveToSection('bank-contact-me');"
+                    class="text-white hover:text-black hover:bg-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 hidden xl:block">Contact
+                    Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro -->
+    <div id="bank-intro" class="flex flex-col items-center justify-center p-16 lg:p-36">
+        <img src="../img/bank-intro.gif" alt="Intro" />
+        <p class="font-guardians text-3xl text-white text-center mb-4" data-aos="fade-up" data-aos-duration="1000">
+            MR.PHONLAYUT SOPAK</p>
+        <p class="font-guardians text-3xl text-white text-center" data-aos="fade-up" data-aos-duration="2000">SOFTWARE
+            DEVELOPER</p>
+    </div>
+
+    <!-- Bio -->
+    <div id="bank-bio" class="flex flex-col items-center justify-center p-16 lg:p-36" data-aos="fade-up"
+        data-aos-duration="1000">
+        <p class="font-guardians text-5xl text-white text-center mb-8">
+            Bio
+        </p>
+        <div class="flex flex-col xl:flex-row">
+            <div class="flex flex-col w-full xl:w-1/2 justify-center items-center">
+                <img src="../img/bio.gif" class="w-full xl:w-screen" alt="bio" />
+            </div>
+            <div class="flex flex-col w-full xl:w-1/2 justify-center items-center">
+                <div class="flex flex-col justify-start items-center mb-4">
+                    <img src="../img/birthday.png" class="w-16 mb-4" alt="email" />
+                    <p class="font-guardians text-xl text-white text-center">17 March 1998</p>
+                </div>
+                <div class="flex flex-col justify-start items-center mb-4">
+                    <img src="../img/age.png" class="w-16 mb-4" alt="email" />
+                    <p class="font-guardians text-xl text-white text-center">26 Years Old</p>
+                </div>
+                <div class="flex flex-col justify-start items-center mb-4">
+                    <img src="../img/address.png" class="w-16 mb-4" alt="email" />
+                    <p class="font-guardians text-xl text-white text-center">73 Soi Rangsit-Nakhon Nayok 57
+                        Rangsit-Nakhon Nayok Road, Prachathipat, Thanyaburi, Pathum Thani 12130</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Educations -->
+    <div id="bank-education" class="flex flex-col items-center justify-center p-16 lg:p-36">
+        <p class="font-guardians text-5xl text-white text-center mb-8" data-aos="fade-up" data-aos-duration="1000">
+            Educations
+        </p>
+        <div class="flex flex-row" data-aos="fade-left" data-aos-duration="1000">
+            <div class="flex flex-col w-1/2 justify-center items-center">
+                <img src="../img/buu.png" class="w-3/5" alt="buu" />
+            </div>
+            <div class="flex flex-col w-1/2 justify-center">
+                <p class="font-guardians text-3xl text-white text-center mb-4">Burapha University</p>
+                <p class="font-guardians text-xl text-white text-center mb-4">2017 - 2020</p>
+                <p class="font-guardians text-xl text-white text-center mb-4">Bachelor of Software Engineering,
+                    Informatics</p>
+            </div>
+        </div>
+        <div class="flex flex-row" data-aos="fade-right" data-aos-duration="1000">
+            <div class="flex flex-col w-1/2 justify-center">
+                <p class="font-guardians text-3xl text-white text-center mb-4">Pathumwilai School</p>
+                <p class="font-guardians text-xl text-white text-center mb-4">2016 - 2017</p>
+                <p class="font-guardians text-xl text-white text-center mb-4">Secondary School</p>
+            </div>
+            <div class="flex flex-col w-1/2 justify-center items-center">
+                <img src="../img/pathumwilai.gif" class="w-4/5" alt="pathumwilai" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Experiences -->
+    <div id="bank-experience" class="flex flex-col items-center justify-center p-16 lg:p-36" data-aos="fade-up"
+        data-aos-duration="1000">
+        <p class="font-guardians text-5xl text-white text-center mb-8">
+            Experiences
+        </p>
+        <div class="flex flex-row mb-16" data-aos="fade-left" data-aos-duration="1000">
+            <div class="flex flex-col w-1/2 justify-center items-center">
+                <img src="../img/clicknext.png" class="w-3/5" alt="clicknext" />
+            </div>
+            <div class="flex flex-col w-1/2 justify-center">
+                <p class="font-guardians text-3xl text-white text-center mb-4">Team Leader and Developer</p>
+                <p class="font-guardians text-3xl text-white text-center mb-4">ClickNext Company</p>
+                <p class="font-guardians text-xl text-white text-center mb-4">2019 - 2020</p>
+                <p class="font-guardians text-xl text-white text-center mb-4">Develop a queue management system, Used for queuing of people who receive services from local government or district office for helping and solve the problems of the people</p>
+            </div>
+        </div>
+        <div class="flex flex-row mb-16" data-aos="fade-right" data-aos-duration="1000">
+            <div class="flex flex-col w-1/2 justify-center">
+                <p class="font-guardians text-3xl text-white text-center mb-4">Software Engineer</p>
+                <p class="font-guardians text-3xl text-white text-center mb-4">C.S.I. GROUP</p>
+                <p class="font-guardians text-xl text-white text-center mb-4">2020 - 2021</p>
+                <p class="font-guardians text-xl text-white text-center mb-4">Develop warehouse management system, used for handling various products Within the warehouse from importing products to warehouses, editing products, including exporting products</p>
+            </div>
+            <div class="flex flex-col w-1/2 justify-center items-center">
+                <img src="../img/csi-group.png" class="w-4/5" alt="csi-group" />
+            </div>
+        </div>
+        <div class="flex flex-row mb-16" data-aos="fade-left" data-aos-duration="1000">
+            <div class="flex flex-col w-1/2 justify-center items-center">
+                <img src="../img/axons.png" class="w-3/5" alt="axons" />
+            </div>
+            <div class="flex flex-col w-1/2 justify-center">
+                <p class="font-guardians text-3xl text-white text-center mb-4">Programmer</p>
+                <p class="font-guardians text-3xl text-white text-center mb-4">CPFIT Center</p>
+                <p class="font-guardians text-xl text-white text-center mb-4">2021 - 2023</p>
+                <p class="font-guardians text-xl text-white text-center mb-4">Developed a system for selling CPF's software products, such as a Pos (Point of Sale) (merchandising system) and Axons Pos, a system for selling products within CP such as "ร้านนี้ขายดี (Ran Nee Khai Dee)", etc.</p>
+            </div>
+        </div>
+        <div class="flex flex-row mb-16" data-aos="fade-right" data-aos-duration="1000">
+            <div class="flex flex-col w-1/2 justify-center">
+                <p class="font-guardians text-3xl text-white text-center mb-4">Application Developer</p>
+                <p class="font-guardians text-3xl text-white text-center mb-4">BGC Glass</p>
+                <p class="font-guardians text-xl text-white text-center mb-4">2023 - Present</p>
+                <p class="font-guardians text-xl text-white text-center mb-4">Develop warehouse management system, used for handling various products Within the warehouse</p>
+            </div>
+            <div class="flex flex-col w-1/2 justify-center items-center">
+                <img src="../img/bgc.png" class="w-4/5" alt="bgc" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="bank-skill" class="flex flex-col items-center justify-center p-16 lg:p-36" data-aos="fade-up"
+        data-aos-duration="1000">
+        <p class="font-guardians text-5xl text-white text-center mb-8">
+            Skills
+        </p>
+        <div class="grid grid-cols-2 xl:grid-cols-3">
+            <div class="flex flex-col space-y-4 justify-center items-center">
+                <img src="../img/figma.png" class="w-1/2" alt="skill" />
+                <p class="font-guardians text-base text-white ">UX UI Design</p>
+                <p class="font-guardians text-base text-white">Advanced</p>
+            </div>
+            <div class="flex flex-col space-y-4 justify-center items-center">
+                <img src="../img/html.png" class="w-1/2" alt="skill" />
+                <p class="font-guardians text-base text-white ">Html</p>
+                <p class="font-guardians text-base text-white">Intermediate</p>
+            </div>
+            <div class="flex flex-col space-y-4 justify-center items-center">
+                <img src="../img/css.png" class="w-1/2" alt="skill" />
+                <p class="font-guardians text-base text-white ">Css</p>
+                <p class="font-guardians text-base text-white">Intermediate</p>
+            </div>
+            <div class="flex flex-col space-y-4 justify-center items-center">
+                <img src="../img/react.png" class="w-1/2" alt="skill" />
+                <p class="font-guardians text-base text-white ">React. Js</p>
+                <p class="font-guardians text-base text-white">Intermediate</p>
+            </div>
+            <div class="flex flex-col space-y-4 justify-center items-center">
+                <img src="../img/next.png" class="w-1/2" alt="skill" />
+                <p class="font-guardians text-base text-white ">Next. Js</p>
+                <p class="font-guardians text-base text-white">Intermediate</p>
+            </div>
+            <div class="flex flex-col space-y-4 justify-center items-center">
+                <img src="../img/vue.png" class="w-1/2" alt="skill" />
+                <p class="font-guardians text-base text-white ">Vue. Js</p>
+                <p class="font-guardians text-base text-white">Intermediate</p>
+            </div>
+            <div class="flex flex-col space-y-4 justify-center items-center">
+                <img src="../img/tailwind.png" class="w-1/2" alt="skill" />
+                <p class="font-guardians text-base text-white ">Tailwind Css</p>
+                <p class="font-guardians text-base text-white">Intermediate</p>
+            </div>
+            <div class="flex flex-col space-y-4 justify-center items-center">
+                <img src="../img/flutter.png" class="w-1/2" alt="skill" />
+                <p class="font-guardians text-base text-white ">Flutter</p>
+                <p class="font-guardians text-base text-white">Intermediate</p>
+            </div>
+            <div class="flex flex-col space-y-4 justify-center items-center">
+                <img src="../img/dart.png" class="w-1/2" alt="skill" />
+                <p class="font-guardians text-base text-white ">Dart</p>
+                <p class="font-guardians text-base text-white">Intermediate</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Me -->
+    <div id="bank-contact-me" class="flex flex-col items-center justify-center p-16 lg:p-36" data-aos="fade-up"
+        data-aos-duration="1000">
+        <p class="font-guardians text-5xl text-white text-center mb-8">
+            Contact
+        </p>
+        <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-row justify-start items-center mb-4 xl:mb-0 mr-4">
+                <img src="../img/gmail.png" class="w-8 mr-4" alt="email" />
+                <p class="font-guardians text-xl text-white text-center">phonlayut10@gmail.com</p>
+            </div>
+            <div class="flex flex-row justify-start items-center mb-4 xl:mb-0 mr-4">
+                <img src="../img/tel.png" class="w-8 mr-4" alt="email" />
+                <p class="font-guardians text-xl text-white text-center">063-882-6152</p>
+            </div>
+            <div class="flex flex-row justify-start items-center mb-4 xl:mb-0 mr-4">
+                <img src="../img/facebook.png" class="w-8 mr-4" alt="email" />
+                <p class="font-guardians text-xl text-white text-center">Bank Phonlayut</p>
+            </div>
+            <div class="flex flex-row justify-start items-center mb-4 xl:mb-0 mr-4">
+                <img src="../img/line.png" class="w-8 mr-4" alt="email" />
+                <p class="font-guardians text-xl text-white text-center">Private_Bank</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="fixed bottom-8 right-8 block xl:hidden">
+        <button id="dropdownTopButton" data-dropdown-toggle="dropdownTop" data-dropdown-placement="top"
+            class="text-black bg-white hover:text-black border border-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800"
+            type="button">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+            </svg>
+        </button>
+
+        <!-- Dropdown menu -->
+        <div id="dropdownTop"
+            class="z-10 hidden bg-black divide-y divide-white rounded-lg shadow w-56 dark:bg-gray-700">
+            <ul class="py-2 font-guardians font-bold text-medium text-white text-center dark:text-gray-200"
+                aria-labelledby="dropdownTopButton">
+                <li>
+                    <a onclick="moveToSection('bank-intro');"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        aria-current="page">Intro</a>
+                </li>
+                <hr class="w-full h-px text-center bg-gray-200 border-0 rounded dark:bg-gray-700">
+                <li>
+                    <a onclick="moveToSection('bank-bio');"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bio</a>
+                </li>
+                <hr class="w-full h-px text-center bg-gray-200 border-0 rounded dark:bg-gray-700">
+                <li>
+                    <a onclick="moveToSection('bank-education');"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Educations</a>
+                </li>
+                <hr class="w-full h-px text-center bg-gray-200 border-0 rounded dark:bg-gray-700">
+                <li>
+                    <a onclick="moveToSection('bank-experience');"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Experiences</a>
+                </li>
+                <hr class="w-full h-px text-center bg-gray-200 border-0 rounded dark:bg-gray-700">
+                <li>
+                    <a onclick="moveToSection('bank-skill');"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Skill</a>
+                </li>
+                <li>
+                    <a onclick="moveToSection('bank-contact-me');"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact
+                        Me</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script>
+    function moveToSection(section) {
+        document.querySelector('#' + section).scrollIntoView({
+            inline: 'start',
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</html>
